@@ -16,7 +16,7 @@ func main() {
 		"http://wsj.com",
 	}
 
-	// using locks instead of channels
+	// using wait groups instead of channels
 	for _, site := range sites {
 		wg.Add(1)
 		go func(s string) {

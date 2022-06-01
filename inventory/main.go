@@ -17,5 +17,5 @@ func main() {
 		fmt.Println("Error reading file:", os.Args[1])
 		panic(err)
 	}
-
+	fmt.Println(data)
 }
